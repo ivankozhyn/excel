@@ -12,6 +12,7 @@
     text-align: center;
     border-right: 1px solid $silver;
     min-width: $cell-width;
+    user-select: none;
   }
   .input {
     padding: 4px;
