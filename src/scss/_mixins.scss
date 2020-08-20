@@ -1,15 +1,14 @@
-@mixin button($color: green) {
-  height: 24px;
+@mixin button($color: $green) {
+  height: 28px;
   min-width: 24px;
   padding: 3px;
   text-align: center;
-  position: relative;
   display: inline-block;
   color: rgba(0, 0, 0, 0.7);
   user-select: none;
 
   & > i {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   &:active,
@@ -18,7 +17,7 @@
   }
 
   &:hover {
-    background-color: #eee;
+    background-color: $gallery;
     cursor: pointer;
   }
 }

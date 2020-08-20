@@ -15,12 +15,12 @@ export class Header extends ExcelComponent {
      <input type="text" class="input" value="Новая таблица">
       <div>
         <div class="button">
-          <span class="material-icons">exit_to_app</span>
+          <i class="material-icons">exit_to_app</i>
         </div>
         <div class="button">
-          <span class="material-icons">
+          <i class="material-icons">
             delete
-          </span>
+          </i>
         </div>
       </div>
     `;

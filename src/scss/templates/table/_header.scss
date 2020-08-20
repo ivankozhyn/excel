@@ -1,37 +1,33 @@
 .excel__header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: $headerHeight;
-  padding: 8px 4px 0;
+  height: 34px;
+  padding: 8px 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .input {
     margin: 0;
-    padding: 2px 7px;
-    color: black;
+    padding: 2px 5px;
+    color: $black;
     border: 1px solid transparent;
     min-width: 1px;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22;
     height: 20px;
     outline: none;
-    transition: border .1s ease-in-out;
+    transition: border 0.1s ease-in-out;
 
     &:hover {
-      border: 1px solid $borderColor;
+      outline: 1px solid $borderColor;
     }
 
     &:focus {
-      border: 2px solid #1a73e8;
+      outline: 2px solid $primaryColor;
     }
   }
 
   .button {
-    @include button(red);
+    @include button($red);
   }
 }

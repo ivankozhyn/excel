@@ -1,8 +1,4 @@
 .excel__table {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: $headerHeight + $toolbarHeight + $formulaHeight;
   overflow-x: auto;
   padding-bottom: 2px;
 
@@ -21,7 +17,7 @@
     min-width: $infoCellWidth;
     height: 100%;
     border: 1px solid $borderColor;
-    background-color: #f8f9fa;
+    background-color: $athensGray;
     border-top: none;
     user-select: none;
   }
@@ -35,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: $athensGray;
     min-width: 40px;
     width: $cellWidth;
     border: 1px solid $borderColor;
@@ -51,10 +47,10 @@
     width: $cellWidth;
     outline: none;
     height: 100%;
-    border: 1px solid #e2e3e3;
+    border: 1px solid $iron;
     border-top: none;
     border-left: none;
-    color: #111;
+    color: $codGray;
     white-space: nowrap;
 
     &.selected {
@@ -64,23 +60,26 @@
     }
   }
 
-  .col-resize, .row-resize {
+  .col-resize,
+  .row-resize {
     position: absolute;
     bottom: 0;
     right: 0;
     background: $primaryColor;
     opacity: 0;
     z-index: 0;
-    &:hover{
+    &:hover {
       opacity: 1 !important;
     }
   }
-  .col-resize{
+  .col-resize {
     top: 0;
     width: 4px;
+    cursor: col-resize;
   }
-  .row-resize{
+  .row-resize {
     left: 0;
     height: 4px;
+    cursor: row-resize;
   }
 }
