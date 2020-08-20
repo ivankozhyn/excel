@@ -1,7 +1,8 @@
-@import "variables";
-@import "mixins";
-
 .excel__table {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $headerHeight + $toolbarHeight + $formulaHeight;
   overflow-x: auto;
   padding-bottom: 2px;
 
@@ -9,18 +10,18 @@
     display: flex;
     flex-direction: row;
     min-height: 20px;
-    height: $row-height;
+    height: $rowHeight;
   }
 
   .row-info {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-width: $cell-width;
+    justify-content: center;
+    min-width: $infoCellWidth;
     height: 100%;
-    border: 1px solid $gray;
-    background-color: $athens_gray;
+    border: 1px solid $borderColor;
+    background-color: #f8f9fa;
     border-top: none;
     user-select: none;
   }
@@ -34,61 +35,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $athens_gray;
+    background-color: #f8f9fa;
     min-width: 40px;
-    width: $long-cell-width;
-    border: 1px solid $gray;
-    height: 100%;
+    width: $cellWidth;
+    border: 1px solid $borderColor;
     border-top: none;
     border-left: none;
+    height: 100%;
     user-select: none;
   }
 
   .cell {
     min-width: 40px;
     padding: 5px;
-    width: $long-cell-width;
+    width: $cellWidth;
+    outline: none;
     height: 100%;
-    border: 1px solid $iron;
+    border: 1px solid #e2e3e3;
     border-top: none;
     border-left: none;
+    color: #111;
     white-space: nowrap;
-    color: $cod_gray;
-    outline: none;
 
     &.selected {
-      border: none;
-      outline: 2px solid $dodger_blue;
+      outline: 2px solid $primaryColor;
       z-index: 2;
+      border: none;
     }
   }
 
-  .col-resize,
-  .row-resize {
+  .col-resize, .row-resize {
     position: absolute;
-    right: 0;
     bottom: 0;
-    background-color: $dodger_blue;
+    right: 0;
+    background: $primaryColor;
     opacity: 0;
-    z-index: 10;
-    &:hover {
+    z-index: 0;
+    &:hover{
       opacity: 1 !important;
     }
   }
-
-  .col-resize {
+  .col-resize{
     top: 0;
     width: 4px;
-    &:hover {
-      cursor: col-resize;
-    }
   }
-
-  .row-resize {
+  .row-resize{
     left: 0;
     height: 4px;
-    &:hover {
-      cursor: row-resize;
-    }
   }
 }
