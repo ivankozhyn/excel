@@ -1,1 +1,1 @@
-export const rowsCount = 100
+export const rowCount = 100
