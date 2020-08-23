@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ivankozhyn/excel",
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
@@ -31,7 +31,7 @@
     "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "css-loader": "^4.2.1",
-    "eslint": "^7.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-google": "^0.14.0",
     "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
@@ -43,6 +43,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "hot-formula-parser": "^3.0.2",
     "normalize.css": "^8.0.1"
   }
 }
