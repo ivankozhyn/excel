@@ -1,4 +1,4 @@
-export const rowCount = 100
+export const rowCount = 20
 export const DEFAULT_COL_WIDTH = 120
 export const DEFAULT_ROW_HEIGHT = 24
 export const defaultStyles = {
@@ -7,5 +7,5 @@ export const defaultStyles = {
   fontStyle: 'normal',
   textDecoration: 'none',
 }
-export const defaultTitle = 'New Table'
-export const debounceTime = 300
+export const defaultTitle = 'Нова таблиця'
+export const throttleTime = 300
