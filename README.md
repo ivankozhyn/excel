@@ -1,5 +1,7 @@
 # Excel application on Pure Javascript based on Vladilen Minin's course
 
+## Deploy on https://ivankozhyn.github.io/excel/build/
+
 ## Реализовано:
 
 1. **Роутинг** 2 страниц: панель управления для создания таблиц и непосредственно страница самой таблицы.<br>
