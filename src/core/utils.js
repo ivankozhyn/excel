@@ -1,4 +1,4 @@
-import {debounceTime} from '@/config/config'
+import {throttleTime} from '@/config/config'
 
 export function capitalize(string) {
   if (typeof string !== 'string') {
@@ -40,7 +40,7 @@ export function toInlineStyles(styles = {}) {
       .join(';')
 }
 
-export function debounce(fn, wait = debounceTime) {
+export function throttle(fn, wait = throttleTime) {
   let timeout
   return function(...args) {
     const later = () => {
@@ -52,4 +52,8 @@ export function debounce(fn, wait = debounceTime) {
     clearTimeout(timeout)
     timeout = setTimeout(later, wait)
   }
+}
+
+export function clone(obj) {
+  return JSON.parse(JSON.stringify(obj))
 }
