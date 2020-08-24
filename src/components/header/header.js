@@ -25,12 +25,20 @@ export class Header extends ExcelComponent {
     return `
       <input type="text" class="input" value="${title}">
       <div>
-        <div class="button" data-button="delete">
+        <div
+          class="button"
+          data-button="delete"
+          title="Видалити таблицю"
+        >
           <i class="material-icons" data-button="delete">
             delete
           </i>
         </div>
-        <div class="button" data-button="exit">
+        <div
+          class="button"
+          data-button="exit"
+          title="Перейти в панель управління"
+        >
         <i class="material-icons" data-button="exit">
           exit_to_app
         </i>

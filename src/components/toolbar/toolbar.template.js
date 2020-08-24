@@ -7,9 +7,10 @@ function toButton(button) {
   return `
       <div
         class="button ${button.active ? 'active' : ''}"
+        title="${Object.values(button.value)[0]}"
         ${meta}
       >
-        <i 
+        <i
           class="material-icons"
           ${meta}
         >
