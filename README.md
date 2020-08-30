@@ -1,4 +1,4 @@
-# Excel application on Pure Javascript based on Vladilen Minin's course
+# Excel application on Pure Javascript
 
 ## Deploy on https://ivankozhyn.github.io/excel/build/
 
